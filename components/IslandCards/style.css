@@ -1,0 +1,15 @@
+.slick-list {
+    margin: 0 -1rem;
+    color:var(--color-blue);
+}
+.slick-slide>div {
+    padding: 0 1rem;
+}
+
+.card img {
+    height: 20rem;
+}
+
+.card{
+    min-height:40rem;
+}

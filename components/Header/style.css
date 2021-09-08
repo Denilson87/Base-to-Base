@@ -1,0 +1,13 @@
+#header-content{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-blue);
+    
+    padding: 2.5rem 0;
+}
+
+#header-content strong {
+    font: 700 2rem Poppins, sans-serif;
+    line-height: 2.4rem;
+    color: #fff;
+}

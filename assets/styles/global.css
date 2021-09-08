@@ -1,0 +1,34 @@
+:root{
+    --color-primary: #008080;
+    --color-secodary:#97b3c5;
+    --color-blue:#005791;
+    --color-text-title: #32264D;
+    --color-line-in-white: #E6E6F0;
+    --color-box-base: #FFFFFF;
+    --color-box-footer: #FAFAFC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    background-color: #ebf2f5;
+}
+
+html,body,#root{
+    height: 100vh;
+    color: var(--color-text-base);
+}
+
+body,
+button,
+input,
+h1,h2,h3,h4,h5,h6,
+p,
+textarea {
+    font: 400 18px Poppins, sans-serif;
+}

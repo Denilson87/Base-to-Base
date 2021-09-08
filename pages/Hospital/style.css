@@ -1,0 +1,79 @@
+#hospital-content{
+    width: 100vw;
+    background-color: #ebf2f5;
+}
+
+#hospital-content main > div{
+    margin: 3.2rem auto;
+    width: 85%;
+}
+
+.hospital-item{
+    background-color: var(--color-box-base);
+    border:1px solid var(--color-line-in-white);
+    border-radius: 0.8rem;
+    margin-top: 2.4rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.hospital-item > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hospital-item div section{
+    width: 50%;
+    padding: 2rem;
+}
+
+.hospital-item div section:first-child p{
+    color: var(--color-blue);
+}
+
+.hospital-item h2{
+    text-align: center;
+    color: var(--color-blue);
+    margin-top: 1rem;
+}
+
+.hospital-item .hospital-info{
+    border-right: 1px solid var(--color-line-in-white);
+}
+
+.hospital-item .hospital-photo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hospital-item .hospital-photo img{
+    width: 100%;
+    height:100%;
+    max-width: 40rem;
+    border-radius: 0.3rem;
+}
+
+.hospital-item footer{
+    padding: 1.8rem 2rem;
+    background-color: var(--color-box-footer);
+    border-top: 1px solid var(--color-line-in-white);
+    margin-top: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-blue);
+}
+
+@media(max-width:580px){
+    .hospital-item > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .hospital-item div section{
+        width: 100%;
+        padding: 2rem;
+    }
+}

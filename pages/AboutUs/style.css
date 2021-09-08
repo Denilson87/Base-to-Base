@@ -1,0 +1,63 @@
+#about-us-content main{
+    margin-bottom: 5rem;
+}
+
+#about-us-content main section img{
+    width: 100vw;
+    max-height: 35vh;
+}
+
+#about-us-content main section:first-child{
+    margin-bottom: 2rem;
+}
+
+#about-us-content main .info{
+    width: 90vw;
+    margin: 0 auto;
+
+    color: var(--color-blue);
+}
+
+#about-us-content main .info p{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+
+    text-align: justify;
+}
+
+#about-us-content main .team{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+#about-us-content main .team>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+
+#about-us-content main .team h2{
+    color: var(--color-blue);
+}
+
+#about-us-content main .team div .team-card{
+    width: 18rem;
+    height: 24rem;
+}
+
+#about-us-content main .team div .team-card img{
+    width: 100%;
+}
+
+#about-us-content main .team div .team-card div{
+    width: 100%;
+    background-color: var(--color-primary);
+    padding: 0.8rem;
+    text-align: center;
+    color: #fff;
+}
+

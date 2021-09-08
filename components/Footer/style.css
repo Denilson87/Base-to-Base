@@ -1,0 +1,135 @@
+#footer-content{
+    background-color: #3c3d41;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    padding: 2rem 5rem;
+}
+
+#footer-content section:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-top: 10px;
+    padding-bottom: 1rem;
+
+    border-bottom: 0.5px solid #ebf2;
+}
+
+#footer-content section:first-child h2 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+#footer-content section:first-child .logo-section{
+    display: flex;
+    align-items: center;
+}
+
+#footer-content section:first-child .information-section ul,
+#footer-content section:first-child .helpful-links-section ul{
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-content section:first-child .information-section ul li,
+#footer-content section:first-child .helpful-links-section ul li,
+#footer-content section:first-child .contacts-section ul li
+{
+    list-style-type: none;
+}
+
+#footer-content section:first-child .information-section ul li a,
+#footer-content section:first-child .helpful-links-section ul li a{
+    text-decoration: none;
+    color: #2864ca;
+    font-size: 1rem;
+    line-height: 0.7rem;
+}
+
+#footer-content section:first-child .contacts-section ul li{
+    color: #2864ca;
+    font-size: 1rem;
+}
+
+
+#footer-content section:first-child .contacts-section div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#footer-content section:first-child .contacts-section div a{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid #2864ca;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s all;
+}
+
+#footer-content section:first-child .contacts-section div a:hover{
+    cursor: pointer;
+    background-color: #fff;
+}
+
+#footer-content section:first-child .news-letter-section form div{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+
+#footer-content section:first-child div form input {
+    border-radius: 0;
+    border: 1px solid var(--color-blue);
+}
+
+#footer-content section:first-child div form button {
+    border-radius: 0;
+    background: var(--color-blue);
+}
+
+#footer-content section:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    margin-top: 1rem;
+    color: #fff;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+#footer-content section:last-child .builder span{
+    color: #6f6f6f;
+}
+
+#footer-content section:last-child .builder span span{
+    color:#ed242b70;
+}
+
+@media(max-width:726px){
+    #footer-content section:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #footer-content{
+        padding: 2rem 1rem;
+    }
+}
+
+@media(max-width:1024px) and (min-width:726px){
+    #footer-content section:first-child {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

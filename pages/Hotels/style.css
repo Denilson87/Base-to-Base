@@ -1,0 +1,165 @@
+#hotel-content{
+    width: 100vw;
+    background-color: #ebf2f5;
+}
+
+.page-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-blue);
+}
+
+.page-header strong {
+    font: 700 2rem Poppins, sans-serif;
+    line-height: 2.4rem;
+    color: #fff;
+}
+
+#hotel-content main > div{
+    margin: 3.2rem auto;
+    width: 85%;
+}
+
+.hotel-item{
+    background-color: var(--color-box-base);
+    border:1px solid var(--color-line-in-white);
+    border-radius: 0.8rem;
+    margin-top: 2.4rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.hotel-item > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotel-item div section{
+    width: 50%;
+    padding: 2rem;
+}
+
+.hotel-item div section:first-child p{
+    color: var(--color-blue);
+}
+
+.hotel-item div section:first-child ul{
+    color: var(--color-blue);
+    list-style: none;
+}
+
+.hotel-item h2{
+    text-align: center;
+    color: var(--color-blue);
+    margin-top: 1rem;
+}
+
+.hotel-item .hotel-info{
+    border-right: 1px solid var(--color-line-in-white);
+}
+
+.hotel-item .hotel-photos ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1rem;
+}
+
+.hotel-item .hotel-photos ul li{
+    width: 15rem;
+    height: 10rem;
+    position: relative;
+}
+
+.hotel-item .hotel-photos ul li img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.3rem;
+}
+
+.hotel-item footer{
+    padding: 1.8rem 2rem;
+    background-color: var(--color-box-footer);
+    border-top: 1px solid var(--color-line-in-white);
+    margin-top: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hotel-item footer a{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 0.5rem;
+    border: 1px solid #2864ca;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.7s;
+}
+
+.hotel-item footer a:hover{
+    transform: scale(1.1);
+}
+
+@media(max-width:580px){
+    .hotel-item > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .hotel-item div section{
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .hotel-item .hotel-photos ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(min-width:580px) and (max-width:1200px){
+    .hotel-item > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .hotel-item div section{
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .hotel-item .hotel-photos ul{
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 1rem;
+    }
+}
+
+@media(min-width:1200px) and (max-width:1840px){
+    .hotel-item > div {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .hotel-item div section{
+        width: 50%;
+        padding: 2rem;
+    }
+
+    .hotel-item .hotel-photos ul{
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 1rem;
+    }
+}
